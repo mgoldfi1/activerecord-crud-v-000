@@ -8,3 +8,5 @@ class CreateMovies < ActiveRecord::Migration
       x.boolean :in_theaters
   end
 end
+
+end
