@@ -59,7 +59,8 @@ def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by
   # release date descending
  a = Movie.all.map {|m| m if m.release_date > 2002}
- binding.pry
+ a.compact.sort_by{|x| x.release_date}.reverse
+ # binding.pry
 end
 
 def can_be_found_updated_and_saved
