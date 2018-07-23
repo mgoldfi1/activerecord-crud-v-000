@@ -26,7 +26,8 @@ end
 
 def can_be_created_in_a_block(args = {:title,:release_date})
   Movie.create do |m|
-    binding.pry
+    m.title = args[:title]
+    m.release_date = args[:release_date]
   end
 end
 
