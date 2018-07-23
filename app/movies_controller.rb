@@ -62,7 +62,7 @@ def can_find_using_where_clause_and_be_sorted
     if x.release_date > 2002
       x 
     end
-  end.sort_by(|x| x.release_date).reverse 
+  end.sort_by(|x| x.release_date) 
 end
 
 def can_be_found_updated_and_saved
